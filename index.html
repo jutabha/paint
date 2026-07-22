@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claire Jutabha: Oil Paintings</title>
+<meta name="description" content="Claire Jutabha: Oil Paintings">
+
+<!-- ============================================================
+     EASY-EDIT SECTION #1 — YOUR DETAILS
+     Change the text between the quotes / tags below.
+     ============================================================ -->
+<meta property="og:title" content="Claire Jutabha: Oil Paintings">
+<meta property="og:description" content="Claire Jutabha: Oil Paintings">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#f6f1e9;          /* warm cream */
+    --bg-2:#efe7db;
+    --ink:#2a2320;         /* warm near-black */
+    --ink-soft:#6b5f56;    /* muted brown-grey */
+    --line:#e0d5c6;
+    --accent:#c25a30;      /* terracotta */
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.1}
+  a{color:inherit}
+  img{display:block;width:100%;height:auto}
+
+  /* header */
+  header.site{
+    position:sticky;top:0;z-index:20;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px clamp(20px,5vw,56px);
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  }
+  .wordmark{font-family:"Fraunces",serif;font-size:20px;letter-spacing:.01em}
+  .wordmark span{color:var(--accent)}
+  nav a{margin-left:22px;text-decoration:none;font-size:14px;color:var(--ink-soft);
+    letter-spacing:.03em;text-transform:uppercase}
+  nav a:hover{color:var(--ink)}
+  @media(max-width:560px){nav a{margin-left:14px;font-size:12px}}
+
+  /* hero */
+  .hero{max-width:var(--maxw);margin:0 auto;padding:clamp(48px,9vw,110px) clamp(20px,5vw,56px) clamp(28px,5vw,56px)}
+  .hero .eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+  .hero h1{font-size:clamp(40px,8vw,84px);margin:0 0 22px;max-width:14ch}
+  .hero p.lede{font-size:clamp(18px,2.4vw,22px);color:var(--ink-soft);max-width:52ch;margin:0}
+
+  /* gallery */
+  .section-head{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,56px);
+    display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+    border-top:1px solid var(--line);padding-top:34px;margin-top:20px;scroll-margin-top:80px}
+  #about,#contact{scroll-margin-top:70px}
+  .section-head h2{font-size:clamp(24px,4vw,34px);margin:0}
+  .section-head .count{color:var(--ink-soft);font-size:14px}
+
+  .gallery{max-width:var(--maxw);margin:0 auto;padding:28px clamp(20px,5vw,56px) 20px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:26px 20px;align-items:start}
+  @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.gallery{grid-template-columns:1fr}}
+  figure.piece{margin:0;cursor:zoom-in;position:relative}
+  figure.piece img{border-radius:3px;box-shadow:0 1px 2px rgba(40,30,20,.10);
+    transition:transform .35s ease, box-shadow .35s ease}
+  figure.piece:hover img{transform:translateY(-3px);box-shadow:0 14px 30px rgba(40,30,20,.18)}
+  figcaption{padding:9px 2px 2px;font-size:14px;color:var(--ink-soft)}
+  figcaption .t{font-family:"Fraunces",serif;color:var(--ink);font-style:italic;font-size:15px}
+
+  /* about */
+  .about{background:var(--bg-2);border-top:1px solid var(--line);margin-top:30px}
+  .about .inner{max-width:760px;margin:0 auto;padding:clamp(48px,7vw,88px) clamp(20px,5vw,56px)}
+  .about h2{font-size:clamp(26px,4vw,38px);margin:0 0 26px}
+  .about p{margin:0 0 20px;font-size:18px}
+  .about p:last-child{margin-bottom:0}
+
+  /* contact / footer */
+  footer.site{max-width:var(--maxw);margin:0 auto;padding:clamp(44px,7vw,80px) clamp(20px,5vw,56px)}
+  footer .cta{font-family:"Fraunces",serif;font-size:clamp(24px,4vw,36px);margin:0 0 22px;max-width:20ch}
+  footer a.mail{font-size:clamp(20px,3vw,26px);text-decoration:none;border-bottom:2px solid var(--accent);
+    padding-bottom:2px}
+  footer a.mail:hover{color:var(--accent)}
+  .foot-meta{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);
+    color:var(--ink-soft);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;
+    background:rgba(30,24,20,.92);padding:4vmin}
+  .lb.open{display:flex}
+  .lb img{max-width:92vw;max-height:82vh;width:auto;border-radius:3px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .lb .cap{position:absolute;bottom:3vmin;left:0;right:0;text-align:center;
+    color:#f4ece1;font-family:"Fraunces",serif;font-style:italic;font-size:16px}
+  .lb button{position:absolute;background:none;border:none;color:#f4ece1;cursor:pointer;
+    font-size:34px;line-height:1;padding:14px;opacity:.8}
+  .lb button:hover{opacity:1}
+  .lb .close{top:2vmin;right:2vmin;font-size:30px}
+  .lb .prev{left:1vmin;top:50%;transform:translateY(-50%)}
+  .lb .next{right:1vmin;top:50%;transform:translateY(-50%)}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wordmark">Claire Jutabha<span>.</span></div>
+  <nav>
+    <a href="#drinks">Drinks</a>
+    <a href="#food">Food</a>
+    <a href="#misc">Misc</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="eyebrow">Oil painter · Los Angeles · San Francisco</p>
+  <h1>Everyday delights</h1>
+  <p class="lede">Still life, mostly things worth eating.</p>
+</section>
+
+<main id="work"></main>
+
+<section class="about" id="about">
+  <div class="inner">
+    <h2>About</h2>
+    <!-- EASY-EDIT SECTION #2 — ARTIST STATEMENT. Rewrite freely. -->
+    <p>The last time I painted was in 2018, my senior year of high school. Every time I thought about picking it back up, I found an excuse — no supplies, no space, no inspiration, no time. It wasn't until my 25th birthday, when I'd become depressed at an old job, that I realized I needed a creative outlet again.</p>
+    <p>Returning to oil painting helped me regulate the stress I was feeling at work — even if the end product isn't what I plan, I experience a joyful sense of accomplishment with each one. Now, as a co-founder and CTO of a startup, I can push myself in both my work and my art. I hope these paintings remind others how beautiful the everyday things in life really are.</p>
+    <p>This is a temporary site I created in 30 minutes to make my art public. I want to create an official site to purchase paintings and prints when I have the time!</p>
+  </div>
+</section>
+
+<footer class="site" id="contact">
+  <p class="cta">Say hello, or ask about a piece.</p>
+  <!-- EASY-EDIT SECTION #3 — CONTACT. Swap in the email you want shown. -->
+  <a class="mail" href="mailto:claire@legalos.ai">claire@legalos.ai</a>
+  <div class="foot-meta">
+    <span>© <span id="yr"></span> Claire Jutabha · Oil paintings</span>
+    <span>Painted from life · Los Angeles &amp; San Francisco</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <button class="close" id="lbClose" aria-label="Close">×</button>
+  <button class="prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <button class="next" id="lbNext" aria-label="Next">›</button>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+/* ============================================================
+   EASY-EDIT SECTION #4 — THE ARTWORK LIST
+   Each line is one painting: { file, title, medium }.
+   • Reorder the lines to change the order on the page.
+   • Edit any title in quotes.
+   • Delete a whole line to remove that painting.
+   • "medium" can hold size/year too, e.g. "Oil on panel · 8×10 in · 2025"
+   ============================================================ */
+const WORKS = [
+  /* ---------- DRINKS ---------- */
+  {section:"Drinks", file:"IMG_5227.jpg", title:"Aperol Spritz",      medium:"Oil on canvas · 5×7 in"},
+  {section:"Drinks", file:"IMG_5225.jpg", title:"Finished Margarita", medium:"Oil on canvas · 5×7 in"},
+  {section:"Drinks", file:"IMG_5212.jpg", title:"Dirty Martini",      medium:"Oil on canvas · 8×10 in"},
+  {section:"Drinks", file:"IMG_5209.jpg", title:"Espresso Martini",   medium:"Oil on canvas · 8×10 in"},
+  {section:"Drinks", file:"IMG_5205.jpg", title:"Lychee Martini",     medium:"Oil on canvas · 8×10 in"},
+
+  /* ---------- FOOD ---------- */
+  {section:"Food", file:"IMG_5228.jpg", title:"Mini Peppers",        medium:"Oil on canvas · 5×7 in"},
+  {section:"Food", file:"IMG_5218.jpg", title:"Strawberry",          medium:"Oil on canvas · 5×7 in"},
+  {section:"Food", file:"IMG_5219.jpg", title:"Avocado (again)",     medium:"Oil on canvas · 5×7 in"},
+  {section:"Food", file:"IMG_5217.jpg", title:"Garlic",              medium:"Oil on canvas · 5×7 in"},
+  {section:"Food", file:"IMG_5221.jpg", title:"Tomatoes on the Vine",medium:"Oil on canvas · 5×7 in"},
+  {section:"Food", file:"IMG_5220.jpg", title:"Jalapeños",           medium:"Oil on canvas · 5×7 in"},
+  {section:"Food", file:"IMG_5207.jpg", title:"Sundubu-jjigae",      medium:"Oil on canvas · 8×10 in"},
+  {section:"Food", file:"IMG_5210.jpg", title:"Ikura",               medium:"Oil on canvas · 8×10 in"},
+  {section:"Food", file:"IMG_5211.jpg", title:"Deviled Eggs",        medium:"Oil on canvas · 8×10 in"},
+  {section:"Food", file:"IMG_3481.jpg", title:"Olives",              medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3157.jpg", title:"Pumpkin",             medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3192.jpg", title:"Kiwi",                medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3191.jpg", title:"Plum",                medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3478.jpg", title:"Mangosteen",          medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3480.jpg", title:"Avocado",             medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3479.jpg", title:"Pumpkin Pie",         medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3158.jpg", title:"Red Apples",          medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_3152.jpg", title:"Green Apple",         medium:"Oil on canvas · 8×8 in"},
+  {section:"Food", file:"IMG_5206.jpg", title:"Cherry Cheesecake",   medium:"Oil on canvas · 8×10 in"},
+  {section:"Food", file:"IMG_5208.jpg", title:"Tomatoes",            medium:"Oil on canvas · 8×10 in"},
+  {section:"Food", file:"IMG_5226.jpg", title:"Cherries",            medium:"Oil on canvas · 5×7 in"},
+
+  /* ---------- MISC ---------- */
+  {section:"Misc", file:"IMG_3155.jpg", title:"Exeter Cap",            medium:"Oil on canvas · 8×8 in"},
+  {section:"Misc", file:"IMG_3154.jpg", title:"Pitcher & Oranges",     medium:"Oil on canvas · 8×8 in"},
+  {section:"Misc", file:"IMG_3150.jpg", title:"Red Mug & Lemon",       medium:"Oil on canvas · 8×8 in"},
+  {section:"Misc", file:"IMG_5223.jpg", title:"“The Cure” (song by Olivia Rodrigo)", medium:"Oil on canvas · 5×7 in"},
+  {section:"Misc", file:"IMG_5222.jpg", title:"“Purple” (song by Olivia Rodrigo)",   medium:"Oil on canvas · 5×7 in"},
+];
+
+const SECTIONS = ["Drinks","Food","Misc"];
+const root = document.getElementById('work');
+const galleries = {};
+SECTIONS.forEach(name=>{
+  const n = WORKS.filter(w=>w.section===name).length;
+  const head=document.createElement('div');
+  head.className='section-head'; head.id=name.toLowerCase();
+  head.innerHTML=`<h2>${name}</h2><span class="count">${n} painting${n>1?'s':''}</span>`;
+  root.appendChild(head);
+  const g=document.createElement('div'); g.className='gallery';
+  root.appendChild(g); galleries[name]=g;
+});
+WORKS.forEach((w,i)=>{
+  const fig=document.createElement('figure'); fig.className='piece';
+  fig.innerHTML=`<img src="images/${w.file}" alt="${w.title} — oil painting" loading="lazy"><figcaption><span class="t">${w.title}</span> — ${w.medium}</figcaption>`;
+  fig.addEventListener('click',()=>openLB(i));
+  galleries[w.section].appendChild(fig);
+});
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* lightbox */
+const lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'),
+      lbCap=document.getElementById('lbCap');
+let cur=0;
+function show(i){cur=(i+WORKS.length)%WORKS.length;const w=WORKS[cur];
+  lbImg.src="images/"+w.file;lbImg.alt=w.title;lbCap.textContent=w.title+" — "+w.medium;}
+function openLB(i){show(i);lb.classList.add('open');document.body.style.overflow='hidden';}
+function closeLB(){lb.classList.remove('open');document.body.style.overflow='';}
+document.getElementById('lbClose').onclick=closeLB;
+document.getElementById('lbNext').onclick=e=>{e.stopPropagation();show(cur+1);};
+document.getElementById('lbPrev').onclick=e=>{e.stopPropagation();show(cur-1);};
+lb.addEventListener('click',e=>{if(e.target===lb)closeLB();});
+document.addEventListener('keydown',e=>{
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')closeLB();
+  if(e.key==='ArrowRight')show(cur+1);
+  if(e.key==='ArrowLeft')show(cur-1);
+});
+</script>
+</body>
+</html>
